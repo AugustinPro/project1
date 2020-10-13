@@ -1,1 +1,18 @@
 /*All my css for index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+#hlogo {
+    text-align: left;
+}
