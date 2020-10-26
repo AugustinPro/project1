@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color:darkcyan;
 }
 
 header {
@@ -15,4 +16,116 @@ header {
 
 #hlogo {
     text-align: left;
+}
+
+h2 {
+    text-align: center;
+    color: darkcyan;
+    text-decoration: underline 3px;
+}
+
+fieldset {
+    background-color: #F5F5F5;
+    margin: 25px;
+    padding: 2%;
+    line-height: 35px;
+}
+
+input {
+    border-color: lightgray;
+    border-style: solid;
+    line-height: 20px;
+    background-color:  #F5F5F5;
+}
+
+.radios {
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 70vw;
+    margin: auto;
+    background-color: #B7CD7F;
+    padding: 2%;
+}
+
+label[for^="num-adherant"] {
+    margin-left: 250px;
+}
+
+label[for^="fax"] {
+    margin-left: 120px;
+}
+
+label[for^="mail"] {
+    margin-left: 110px;
+}
+
+/* Section personal */
+
+label[for^="first-name"] {
+    margin-left: 210px;
+}
+
+label[for^="birth-date"] {
+    margin-left: 256px;
+}
+
+label[for^="pcs-code"] {
+    margin-left: 236px;
+}
+
+/* Section info */
+
+label[for^="contract-type"] {
+    margin-left: 210px;
+}
+
+#SI-2 {
+    margin-left: 250px;
+}
+#SI-4 {
+    margin-left: 120px;
+}
+
+#SIA-2 {
+    margin-left: 380px;
+}
+#SIA-4 {
+    margin-left: 176px;
+}
+
+#SIR-2 {
+    margin-left: 320px;
+}
+#SIR-4 {
+    margin-left: 54px;
+}
+#SIR-6 {
+    margin-left: 134px;
+}
+#SIR-8 {
+    margin-left: 234px;
+}
+#SIR-10 {
+    margin-left: 88px;
+}
+
+#SIRA-2 {
+    margin-left: 283px;
+}
+
+#stop-work, 
+#stop-sick {
+    margin-left: 35px;
+}
+
+/* Section cancel-meeting */
+
+label[for^="cancel-time"] {
+    margin-left: 260px;
+}
+
+#postpone-no {
+    margin-left: 207px;
 }

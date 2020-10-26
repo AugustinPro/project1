@@ -7,48 +7,160 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo_santraplus.png" alt="Logo Santra Plus" class="logo" id="hlogo" width="278" height="55">
-        <p><span class="bold">Formulaire à adresser par courrier, fax ou e-mail :</span> planning@santraplus.fr<br><span class="bold">Planning Santra Plus</span> - CS 20874 - 76087 Le Havre CEDEC - Fax : 02 32 74 51 20</p>
-    </header>
     <main>
-        <form action="" method="POST" class="reference">
-            <fieldset>
-                <p class="bold">Vos références</p>
-                <label for="social">Raison sociale : </label>
-                <input type="text" name="social" id="social"><br>
-                <label for="num-adherant">N&deg; d'adhérent : </label>
-                <input type="text" name="num-adherant" id="num-adherant"><br>
-                <label for="name-asker">Nom du demandeur : </label>
-                <input type="text" name="name-asker" id="name-asker"><br>
-                <label for="phone">Tél : </label>
-                <input type="tel" name="phone" id="phone"><br>
-                <label for="fax">Fax : </label>
-                <input type="tel" name="fax" id="fax"><br>
-                <label for="mail">Mail : </label>
-                <input type="email" name="mail" id="mail"><br>
-            </fieldset>
-        </form>
-        <form action="" method="POST" class="personal">
-            <fieldset>
-                <p class="bold">Le salarié</p>
-                <label for="civil">Civilité : </label>
-                <input type="checkbox" name="mcivil" id="mcivil">
-                <label for="civil"> Monsieur</label>
-                <input type="checkbox" name="fcivil" id="fcivil">
-                <label for="civil"> Madame</label><br>
-                
-            </fieldset>
-        </form action="" method="POST">
-        <form action="" method="POST" class="info">
-            
-        </form action="" method="POST">
-        <form action="" method="POST" class="start-meeting">
-            
-        </form action="" method="POST">
-        <form action="" method="POST" class="cancel-meeting">
-            
-        </form action="" method="POST">
+        <section class="wrapper">
+            <header>
+                <img src="img/logo_santraplus.png" alt="Logo Santra Plus" class="logo" id="hlogo" width="278" height="55">
+                <p><span class="bold">Formulaire à adresser par courrier, fax ou e-mail :</span> planning@santraplus.fr<br><span class="bold">Planning Santra Plus</span> - CS 20874 - 76087 Le Havre CEDEC - Fax : 02 32 74 51 20</p>
+            </header>
+            <form action="" method="POST" class="reference">
+                <fieldset>
+                    <p class="bold">Vos références</p>
+                    <label for="social">Raison sociale : </label>
+                    <input type="text" name="social" id="social">
+                    <label for="num-adherant">N&deg; d'adhérent : </label>
+                    <input type="text" name="num-adherant" id="num-adherant"><br>
+                    <label for="name-asker">Nom du demandeur : </label>
+                    <input type="text" name="name-asker" id="name-asker"><br>
+                    <label for="phone">Tél : </label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="fax">Fax : </label>
+                    <input type="tel" name="fax" id="fax">
+                    <label for="mail">Mail : </label>
+                    <input type="email" name="mail" id="mail"><br>
+                </fieldset>
+            </form>
+            <h2>Attention ! Toute demande incomplète ne sera pas prise en compte</h2>
+            <form action="" method="POST" class="personal">
+                <fieldset>
+                    <p class="bold">Le salarié</p>
+                    <label for="civil">Civilité : </label>
+                    <input type="checkbox" name="civil" id="mcivil">
+                    <label for="civil"> Monsieur</label>
+                    <input type="checkbox" name="civil" id="fcivil">
+                    <label for="civil"> Madame</label><br>
+                    <label for="birth-name"> Nom de naissance : </label>
+                    <input type="text" name="birth-name" id="birth-name">
+                    <label for="first-name"> Prénom : </label>
+                    <input type="text" name="first-name" id="first-name"><br>
+                    <label for="marriage-name"> Nom marital : </label>
+                    <input type="text" name="marriage-name" id="marriage-name">
+                    <label for="birth-date"> Date de naissance : </label>
+                    <input type="text" name="birth-date" id="birth-date"><br>
+                    <label for="job">Poste de travail : </label>
+                    <input type="text" name="job" id="job">
+                    <label for="pcs-code"> Code PCS : </label>
+                    <input type="text" name="pcs-code" id="pcs-code">
+                </fieldset>
+            </form action="" method="POST">
+            <form action="" method="POST" class="info">
+                <fieldset>
+                    <p class="bold"> Informations complémentaires pour création nouveau slarié</p>
+                    <label for="hire-date"> Date d'embauche : </label>
+                    <input type="text" name="hire-date" id="hire-date">
+                    <label for="contract-type"> Type de contrat (CDD, CDI, apprenti...) : </label>
+                    <input type="text" name="contract-type" id="contract-type"><br>
+                    <label for="contract-end"> Pour les CDD, date de fin de contrat : </label>
+                    <input type="text" name="contract-end" id="contract-end">
+                    <p>Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour votre entreprise ou pour une autre entreprise : </p>
+                    <input type="checkbox" name="same-job-yes" id="same-job-yes">
+                    <label for="same-job-yes"> Oui</label>
+                    <input type="checkbox" name="same-job-no" id="same-job-no">
+                    <label for="same-job-no"> Non</label>
+
+                    <p><span>Catégorie suivant les surveillances</span> : <span>Cocher la ou les correspondantes</span></p>
+
+                    <label for="SI"> Suivi Individuel Simple (SI) : </label><br>
+                    <input type="checkbox" name="SI-1" id="SI-1">
+                    <label for="SI"> Cas général hors risque particulier</label>
+                    <input type="checkbox" name="SI-2" id="SI-2">
+                    <label for="SI"> Salarié exposé aux agents biologiques groupe 2 (AB2)</label><br>
+                    <input type="checkbox" name="SI-3" id="SI-3">
+                    <label for="SI"> Moins de 18 ans non affecté à travaux réglementés</label>
+                    <input type="checkbox" name="SI-4" id="SI-4">
+                    <label for="SI"> Salarié exposé aux champs électromagnétiques si VLE dépassée</label><br><br>
+
+                    <label for="SIA"> Suivi Individuel Adapté (SIA) : </label><br>
+                    <input type="checkbox" name="SIA-1" id="SIA-1">
+                    <label for="SIA"> Travailleur de nuit</label>
+                    <input type="checkbox" name="SIA-2" id="SIA-2">
+                    <label for="SIA"> Travailleur handicapé</label><br>
+                    <input type="checkbox" name="SIA-3" id="SIA-3">
+                    <label for="SIA"> Travailleur titulaire d'un pension d'invalidité</label>
+                    <input type="checkbox" name="SIA-4" id="SIA-4">
+                    <label for="SIA"> Femme enceinte, allaitante ou venant d’accoucher</label><br><br>
+
+                    <label for="SIR"> Suivi Individuel Renforcé (SIR) : </label><br>
+                    <input type="checkbox" name="SIR-1" id="SIR-1">
+                    <label for="SIR"> Salarié exposé à l’amiante</label>
+                    <input type="checkbox" name="SIR-2" id="SIR-2">
+                    <label for="SIR"> Salarié exposé au plomb</label><br>
+                    <input type="checkbox" name="SIR-3" id="SIR-3">
+                    <label for="SIR"> Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et 4)</label>
+                    <input type="checkbox" name="SIR-4" id="SIR-4">
+                    <label for="SIR"> Salarié exposé au risque Hyperbare</label><br>
+                    <input type="checkbox" name="SIR-5" id="SIR-5">
+                    <label for="SIR"> Salarié exposé aux rayonnements ionisants Cat B</label>
+                    <input type="checkbox" name="SIR-6" id="SIR-6">
+                    <label for="SIR"> Autorisation de conduite</label><br>
+                    <input type="checkbox" name="SIR-7" id="SIR-7">
+                    <label for="SIR"> Salarié exposé au risque de chute de hauteur lors du<br> montage et démontage d'échafaudage</label>
+                    <input type="checkbox" name="SIR-8" id="SIR-8">
+                    <label for="SIR"> Habilitation électrique (travaux sur installations électriques)</label><br>
+                    <input type="checkbox" name="SIR-9" id="SIR-9">
+                    <label for="SIR"> Manutention manuelle, port de charge ˃55kg (R4541-9)</label>
+                    <input type="checkbox" name="SIR-10" id="SIR-10">
+                    <label for="SIR"> Salarié exposé à CMR</label><br><br>
+
+                    <label for="SIRA"> Suivi Individuel Renforcé Annuel (SIRA) : </label><br>
+                    <input type="checkbox" name="SIRA-1" id="SIRA-1">
+                    <label for="SIRA"> Rayonnements ionisants Cat A</label>
+                    <input type="checkbox" name="SIRA-2" id="SIRA-2">
+                    <label for="SIRA"> Moins de 18 ans affecté à travaux réglementés</label>           
+                </fieldset>
+            </form action="" method="POST">
+            <form action="" method="POST" class="start-meeting">
+                <fieldset>
+                    <p class="bold">Demande de rendez-vous :</p>
+                    <input type="checkbox" name="start-birth" id="start-birth">
+                    <label for="start-birth"> Reprise après un congé de maternité</label><br>
+                    <input type="checkbox" name="start-sick" id="start-sick">
+                    <label for="start-sick"> Reprise après une absence pour cause de maladie professionnelle</label><br>
+                    <input type="checkbox" name="start-other" id="start-other">
+                    <label for="start-other"> Reprise après une absence de + 30 jours suite : </label><br>
+                        <input type="radio" name="choice" id="stop-work">
+                        <label for="stop-work"> accident de travail</label><br>
+                        <input type="radio" name="choice" id="stop-sick">
+                        <label for="stop-sick"> arrêt maladie</label><br>
+                    <label for="restart-1">Date de la reprise : </label>
+                    <input type="date" name="restart-1" id="restart-1"><br>
+                    <label for="stop-1"> Durée de l'arrêt : </label>
+                    <input type="text" name="stop-1" id="stop-1"><br>
+
+                    <input type="checkbox" name="test-employer" id="test-employer">
+                    <label for="test-employer"> Examen à la demande de l’employeur (merci de préciser le motif) : </label>
+                    <input type="text" name="test-employer" id="test-employer">
+                </fieldset>
+            </form action="" method="POST">
+            <form action="" method="POST" class="cancel-meeting">
+                <fieldset>
+                    <p>Annuler ou reporter un rendez-vous :</p>
+                    <label for="cancel-date"><span>Date</span> du rendez-vous : </label>
+                    <input type="date" name="cancel-date" id="cancel-date">
+                    <label for="cancel-time"> Horaire du rendez-vous</label>
+                    <input type="text" name="cancel-time" id="cancel-time"><br>
+                    <label for="cancel-name"><span>Nom du</span> médecin ou infirmière : </label>
+                    <input type="text" name="cancel-name" id="cancel-name"><br>
+                    <label for="cancel-postpone"><span>Reporter</span> le rendez-vous : </label>
+                    <input type="checkbox" name="postpone-yes" id="postpone-yes">
+                    <label for="postpone-yes"> Oui, disponibilités : </label>
+                    <input type="text" name="postpone-yes" id="postpone-yes"><br>
+                    <input type="checkbox" name="postpone-no" id="postpone-no">
+                    <label for="postpone-no"> Non, motif : </label>
+                    <input type="text" name="postpone-text" id="postpone-text">
+                </fieldset>
+            </form action="" method="POST">
+        </section>
     </main>
     <footer>
 
